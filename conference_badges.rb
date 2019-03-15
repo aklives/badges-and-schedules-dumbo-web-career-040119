@@ -31,11 +31,11 @@ def printer array_of_names
   array_of_badges.each do |x|
     puts x
   end
-  
+
   assignments = assign_rooms(array_of_names)
   assignments.each do |x|
     puts x
   end
 end
-    
+
   
