@@ -20,7 +20,7 @@ def assign_rooms array_of_names
     counter += 1
   end
   assignments = Array.new(rooms.length)
-  for i in 1..rooms.length
+  for i in 0...rooms.length
     assignments[i] = "Hello, #{rooms[i]}! You'll be assigned to room #{i}!"
   end
   assignments.shift
