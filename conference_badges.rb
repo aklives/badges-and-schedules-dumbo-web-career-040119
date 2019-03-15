@@ -21,7 +21,7 @@ def assign_rooms array_of_names
   end
   assignments = Array.new(rooms.length)
   for i in 0...rooms.length
-    assignments[i] = "Hello, #{rooms[i]}! You'll be assigned to room #{i}!"
+    assignments[i] = "Hello, #{rooms[i]}! You'll be assigned to room #{i+1}!"
   end
   return assignments
 end
