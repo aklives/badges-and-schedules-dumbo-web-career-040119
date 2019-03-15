@@ -13,15 +13,16 @@ def batch_badge_creator array_of_names
 end
 
 def assign_rooms array_of_names
-  rooms = Array.new(7)
+  rooms = Array.new(array_of_names.length)
   counter = 0
-  while counter < array_of_names.length
+  while counter < rooms.length
     rooms[counter] = array_of_names[counter]
-    counter =+ 1
+    counter += 1
   end
   assignments = Array.new(rooms.length)
   for i in 1..rooms.length
-    assignments[i] = "Hello, #{rooms[i]}! You'll be assigned to room #{[i]}!"
+    assignments[i] = "Hello, #{rooms[i]}! You'll be assigned to room #{i}!"
   end
+  assignments.shift
   return assignments
 end
